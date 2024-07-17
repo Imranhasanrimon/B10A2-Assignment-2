@@ -1,3 +1,117 @@
-p {
-    color: red;
+/* google font link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+
+span {
+    font-family: "Sacramento", cursive;
+
+}
+
+/* my default styles  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+/* shared styles  */
+.icon {
+    font-style: italic;
+    color: rgb(230, 83, 60);
+    font-size: 2.25rem;
+    cursor: pointer;
+}
+
+.btn-primary {
+    padding: 8px 20px;
+    border-radius: 46px;
+    border: none;
+    background: rgb(230, 83, 60);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header section starts here  */
+header {
+    max-width: 90%;
+    /* height: 715px; */
+    margin: 0 auto;
+    padding: 0 190px;
+    padding-top: 60px;
+    background: linear-gradient(rgb(17, 17, 17), rgb(78, 72, 72), rgb(17, 17, 17));
+    border: 1px solid black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding-right: 24px;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.menu {
+    display: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero .text-content {
+    max-width: 520px;
+}
+
+.hero {
+    margin-top: 32px;
+}
+
+.hero .text-content h1 {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 28px;
+}
+
+.hero .text-content .shape {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.text-content .btn {
+    padding: 16px 40px;
+    display: inline-block;
+    margin-top: 28px;
+}
+
+.text-content .last-btn {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 14px;
 }
