@@ -193,4 +193,37 @@ main {
 
 .habits {
     text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.habits .title {
+    margin-bottom: 14px;
+}
+
+.habits-box-container {
+    max-width: 1044px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    gap: 40px;
+}
+
+.habits-box {
+    max-width: 230px;
+}
+
+.habits-box img {
+    width: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.habits-box h5 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+
 }

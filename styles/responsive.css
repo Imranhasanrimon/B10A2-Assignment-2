@@ -71,5 +71,22 @@
 
 
     /* responsive habit section   */
+    .habits .title {
+        font-size: 2rem;
+
+    }
+
+    .habits .description {
+        padding: 0 40px;
+    }
+
+    .habits-box-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .br {
+        display: none;
+    }
 
 }
