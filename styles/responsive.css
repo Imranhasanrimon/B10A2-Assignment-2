@@ -89,4 +89,19 @@
         display: none;
     }
 
+    /* responsive extra mile section  */
+    .extra-mile {
+        flex-direction: column;
+    }
+
+    .extra-mile button {
+        display: block;
+        width: 100%;
+    }
+
+    .extra-mile img {
+        max-width: 100%;
+        /* margin-top: 30px; */
+    }
+
 }

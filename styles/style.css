@@ -56,7 +56,6 @@
 /* header section starts here  */
 header {
     max-width: 100%;
-    /* height: 715px; */
     margin: 0 auto;
     padding: 0 190px;
     padding-top: 60px;
@@ -226,4 +225,35 @@ main {
     font-size: 18px;
     font-weight: 600;
 
+}
+
+/* run an extra mile section styles  */
+.extra-mile {
+    max-width: 1044px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    border-radius: 18px;
+    padding: 35px;
+    background: rgb(34, 34, 34);
+}
+
+.extra-mile .text {
+    max-width: 445px;
+}
+
+.extra-mile .text .description {
+    margin: 30px 0;
+}
+
+.extra-mile button {
+    width: 224px;
+}
+
+.extra-mile img {
+    max-width: 40%;
+    height: 315px;
+    border-radius: 18px;
 }
