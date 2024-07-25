@@ -92,6 +92,7 @@
     /* responsive extra mile section  */
     .extra-mile {
         flex-direction: column;
+        margin: 100px 20px;
     }
 
     .extra-mile button {
@@ -101,7 +102,145 @@
 
     .extra-mile img {
         max-width: 100%;
-        /* margin-top: 30px; */
     }
 
+    /* responsive training styles  */
+
+
+    .one {
+        grid-column: span 14;
+    }
+
+    .two {
+        grid-column: span 14;
+    }
+
+    .three,
+    .six {
+        display: none;
+    }
+
+    .four {
+        grid-column: span 13;
+    }
+
+    .five {
+        grid-column: span 15;
+    }
+
+
+    /* responsive bmi calculator area  */
+    .bmi-calculator .bmi,
+    .bmi-calculator .title {
+        padding: 0 20px;
+    }
+
+
+    .wrapper {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 0;
+    }
+
+    form {
+        margin-top: 40px;
+    }
+
+    /* .input-area {
+        grid-template-columns: repeat(2, 30%);
+    } */
+
+
+
+
+    /* responsive meet our team section styles  */
+    .image-collage {
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-template-rows: repeat(5, 1fr); */
+    }
+
+
+    /* responsive footer styles  */
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer .container {
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+}
+
+/* for medium devices  */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    /* Responsive Header Section  */
+    header {
+        padding: 52px 30px;
+    }
+
+    header nav .hide {
+        display: flex;
+    }
+
+    header nav ul {
+        gap: 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .text-content {
+        align-self: start;
+        padding-left: 40px;
+        margin-bottom: 100px;
+    }
+
+    .card-container {
+        bottom: 140px;
+        left: -50px;
+    }
+
+    .second {
+        top: 60px;
+        left: 190px;
+    }
+
+
+
+
+    /* responsive habit section   */
+    .habits-box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* responsive extra mile section  */
+    .extra-mile {
+        margin: 70px 20px;
+    }
+
+
+    /* responsive footer styles  */
+    footer {
+        padding: 50px 20px;
+    }
+
+    footer .container {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    footer .container .fitness-content {
+        max-width: 60%;
+        grid-column: span 2;
+    }
 }
