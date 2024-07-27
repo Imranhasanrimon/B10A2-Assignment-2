@@ -538,6 +538,45 @@ select {
 .client-testimonials {
     max-width: 1060px;
     margin: 0 auto;
+
+    .heading {
+        text-align: center;
+        margin: 50px auto;
+    }
+}
+
+.all-testimonials {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    .first {
+        grid-column: span 2;
+    }
+
+    .second2 {
+        background: rgb(43, 43, 43);
+    }
+
+    .third {
+        grid-row: span 2;
+        background: rgb(65, 53, 53);
+    }
+
+    .fourth {
+
+        background: rgb(97, 69, 93);
+    }
+
+    .fifth {
+        grid-column: span 2;
+        background: rgba(255, 226, 226, 0.637);
+        /* backdrop-filter: blur(5px); */
+        color: black;
+
+    }
+
 }
 
 .testimonial-card {
