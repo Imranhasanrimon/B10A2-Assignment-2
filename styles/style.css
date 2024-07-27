@@ -269,37 +269,17 @@ main {
 
 .training-section .heading {
     max-width: 670px;
+
+    .description {
+        margin-top: 14px;
+        margin-bottom: 88px;
+    }
 }
 
 .training-collage {
     display: grid;
     grid-template-columns: repeat(28, 1fr);
     grid-template-rows: repeat(2, 215px);
-}
-
-.one {
-    grid-column: span 6;
-}
-
-.two {
-    grid-column: span 14;
-}
-
-.three {
-    grid-column: span 8;
-}
-
-.four {
-    grid-column: span 11;
-}
-
-.five {
-    grid-column: span 7;
-}
-
-
-.six {
-    grid-column: span 10;
 }
 
 .training-collage .image-container {
@@ -313,9 +293,100 @@ main {
 
 .training-collage .text {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    font-size: .8rem;
+
+
 }
+
+.image-container .gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(6, 255, 210, 0.5);
+}
+
+.one {
+    grid-column: span 6;
+
+    .text {
+        color: black;
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+.two {
+    grid-column: span 14;
+
+    .gradient {
+        background: rgba(255, 0, 0, 0.5);
+    }
+
+    .text {
+        color: white;
+        left: 10px;
+        top: 10px;
+    }
+}
+
+.three {
+    grid-column: span 8;
+
+    .gradient {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .text {
+        color: white;
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+.four {
+    grid-column: span 11;
+
+    .gradient {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .text {
+        color: white;
+        right: 10px;
+        top: 10px;
+    }
+}
+
+.five {
+    grid-column: span 7;
+
+    .gradient {
+        background: rgba(66, 255, 0, .3);
+    }
+
+    .text {
+        color: white;
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+
+.six {
+    grid-column: span 10;
+
+    .gradient {
+        background: rgba(0, 71, 255, .3);
+    }
+
+    .text {
+        color: white;
+        left: 10px;
+        bottom: 10px;
+    }
+}
+
+
 
 /* BMI calculator section styles  */
 .bmi-calculator .bmi {
@@ -331,7 +402,7 @@ main {
     max-width: 1040px;
     margin: 50px auto;
     align-items: start;
-    gap: 100px;
+    gap: 170px;
 
 }
 
@@ -345,39 +416,35 @@ main {
 
 .content .caption {
     color: rgb(255, 255, 255);
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 600;
     text-align: left;
+}
+
+
+.content table {
+    border-collapse: collapse;
 }
 
 table .caption {
     margin-bottom: 50px;
 }
 
-.content table {
-    width: 410px;
-    border-collapse: collapse;
-
-}
-
 table .th {
     color: rgb(255, 255, 255);
     font-weight: 500;
     text-align: left;
-    padding: 11px 18px;
+    padding: 11px 20px;
 }
 
 table td {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 11px 18px;
+    padding: 11px 20px;
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
 }
 
 /* form styles  */
-.content form {
-    max-width: 580px;
-}
 
 form .caption {
     margin-bottom: 14px;
@@ -389,7 +456,7 @@ form .description {
 
 .input-area {
     display: grid;
-    grid-template-columns: repeat(2, 40%);
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     /* changable  */
     gap: 12px;
 }
@@ -421,14 +488,18 @@ select {
 .team-container {
     max-width: 1060px;
     margin: 0 auto;
+    margin-top: 88px;
     color: white;
-    /*deletable*/
+
+    .title,
+    .description {
+        max-width: 670px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 20px;
+    }
 }
 
-.team-container .team-title,
-.team-container .team-description {
-    text-align: center;
-}
 
 .card {
     position: relative;
@@ -438,6 +509,12 @@ select {
     position: absolute;
     bottom: 15px;
     left: 10px;
+
+    h6 {
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: .6;
+    }
 
 }
 
@@ -480,11 +557,11 @@ footer .container h1 {
     margin-bottom: 20px;
 }
 
-footer .container p {
+/* footer .container p {
     color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     line-height: 24px;
-}
+} */
 
 footer .container h3 {
     font-size: 32px;

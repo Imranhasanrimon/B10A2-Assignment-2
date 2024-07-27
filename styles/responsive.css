@@ -71,6 +71,10 @@
 
 
     /* responsive habit section   */
+    main {
+        padding: 0;
+    }
+
     .habits .title {
         font-size: 2rem;
 
@@ -95,6 +99,10 @@
         margin: 100px 20px;
     }
 
+    .extra-mile .title {
+        font-size: 2rem;
+    }
+
     .extra-mile button {
         display: block;
         width: 100%;
@@ -105,7 +113,11 @@
     }
 
     /* responsive training styles  */
-
+    .training-section .heading {
+        .title {
+            font-size: 2rem;
+        }
+    }
 
     .one {
         grid-column: span 14;
@@ -130,25 +142,30 @@
 
 
     /* responsive bmi calculator area  */
-    .bmi-calculator .bmi,
-    .bmi-calculator .title {
-        padding: 0 20px;
+    .bmi-calculator .heading {
+        margin: 0 20px;
+
+        .title {
+            font-size: 2rem;
+        }
     }
 
 
     .wrapper {
         flex-direction: column;
         padding: 0 20px;
-        gap: 0;
+        gap: 40px;
     }
 
-    form {
-        margin-top: 40px;
+    .content .caption {
+        font-size: 1rem;
+
     }
 
-    /* .input-area {
-        grid-template-columns: repeat(2, 30%);
-    } */
+    /* responsive extra mile styles  */
+    .extra-mile .title {
+        font-size: 2.25rem;
+    }
 
 
 
@@ -156,7 +173,11 @@
     /* responsive meet our team section styles  */
     .image-collage {
         grid-template-columns: repeat(1, 1fr);
-        /* grid-template-rows: repeat(5, 1fr); */
+
+        .Jerome,
+        .Dianne {
+            display: none;
+        }
     }
 
 
@@ -217,9 +238,18 @@
 
 
     /* responsive habit section   */
+    .habits .description {
+        padding: 0 45px;
+    }
+
+    .habits .br {
+        display: none;
+    }
+
     .habits-box-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
 
 
     /* responsive extra mile section  */
@@ -227,11 +257,29 @@
         margin: 70px 20px;
     }
 
+    /* responsive training styles  */
+    .training-section .heading {
+        margin: 0;
+    }
+
+    /* responsive BMI calculator styles  */
+    .bmi-calculator .heading {
+        margin: 0 20px;
+    }
+
+
+    .wrapper {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 40px;
+    }
+
 
     /* responsive footer styles  */
     footer {
         padding: 50px 20px;
     }
+
 
     footer .container {
         margin: 0;
