@@ -269,6 +269,7 @@ main {
 
 .training-section .heading {
     max-width: 670px;
+    margin: 0;
 
     .description {
         margin-top: 14px;
