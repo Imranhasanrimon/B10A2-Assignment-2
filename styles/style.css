@@ -445,6 +445,9 @@ table td {
 }
 
 /* form styles  */
+form {
+    max-width: 570px;
+}
 
 form .caption {
     margin-bottom: 14px;
@@ -607,6 +610,14 @@ select {
         height: 40px;
         border-radius: 50%;
         border: 2px solid rgb(230, 83, 60);
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        opacity: .7;
     }
 }
 

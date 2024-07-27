@@ -171,6 +171,11 @@
 
 
     /* responsive meet our team section styles  */
+    .team-container .title {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
     .image-collage {
         grid-template-columns: repeat(1, 1fr);
 
@@ -289,10 +294,13 @@
     }
 
     /* responsive BMI calculator styles  */
+    form {
+        max-width: 100%;
+    }
+
     .bmi-calculator .heading {
         margin: 0 20px;
     }
-
 
     .wrapper {
         flex-direction: column;
@@ -310,7 +318,6 @@
 
 
         .second2,
-
         .fourth {
             grid-column: span 1;
         }
