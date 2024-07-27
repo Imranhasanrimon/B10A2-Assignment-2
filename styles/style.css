@@ -534,6 +534,32 @@ select {
     margin: 50px 20px;
 }
 
+/* client testimonials section styles  */
+.client-testimonials {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: rgb(109, 109, 109);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.testimonial-card .client {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid rgb(230, 83, 60);
+    }
+}
+
 /* footer section style  */
 footer {
     background: rgb(34, 34, 34);
@@ -557,11 +583,6 @@ footer .container h1 {
     margin-bottom: 20px;
 }
 
-/* footer .container p {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    line-height: 24px;
-} */
 
 footer .container h3 {
     font-size: 32px;
