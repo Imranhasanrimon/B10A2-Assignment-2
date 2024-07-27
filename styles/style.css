@@ -60,7 +60,7 @@ body {
 
 /* header section starts here  */
 header {
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 190px;
     padding-top: 60px;
@@ -463,9 +463,6 @@ footer {
     max-width: 1440px;
     margin: 0 auto;
     padding: 50px 100px;
-    color: white;
-    /*deletable*/
-
 }
 
 footer .container {
@@ -473,7 +470,7 @@ footer .container {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 40% 25% 25%);
-    gap: 100px;
+    gap: 7%;
 }
 
 footer .container h1 {
@@ -492,6 +489,7 @@ footer .container p {
 footer .container h3 {
     font-size: 32px;
     font-weight: 700;
+    color: white;
 }
 
 footer .container ul li {
